@@ -22,6 +22,9 @@ public static void main(String[] args) {
 	ChromeDriver driver = new ChromeDriver();
 	
 	driver.get("http://automationpractice.com/index.php");
+	
+	driver.manage().window().maximize();
+
 	//System.out.println(driver.getTitle());
 	//click sign in
 	driver.findElement(By.linkText("Sign in")).click();
